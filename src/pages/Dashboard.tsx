@@ -174,10 +174,10 @@ const Dashboard = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <Card className="p-6 space-y-2">
             <div className="flex items-center gap-2 text-primary">
-              <Star className="w-5 h-5" />
-              <h3 className="font-semibold">Videos Today</h3>
+              <Star className="w-5 h-5 flex-shrink-0" />
+              <h3 className="font-semibold text-sm md:text-base">Videos Today</h3>
             </div>
-            <div className="text-3xl font-bold">
+            <div className="text-2xl md:text-3xl font-bold">
               {videosWatchedToday}/5
             </div>
             <p className="text-sm text-muted-foreground">
@@ -187,10 +187,10 @@ const Dashboard = () => {
 
           <Card className="p-6 space-y-2">
             <div className="flex items-center gap-2 text-success">
-              <CheckCircle2 className="w-5 h-5" />
-              <h3 className="font-semibold">Total Reviews</h3>
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
+              <h3 className="font-semibold text-sm md:text-base">Total Reviews</h3>
             </div>
-            <div className="text-3xl font-bold">
+            <div className="text-2xl md:text-3xl font-bold">
               {profile?.total_reviews || 0}
             </div>
             <p className="text-sm text-muted-foreground">completed</p>
@@ -198,10 +198,10 @@ const Dashboard = () => {
 
           <Card className="p-6 space-y-2">
             <div className="flex items-center gap-2 text-orange-500">
-              <Flame className="w-5 h-5" />
-              <h3 className="font-semibold">Day Streak</h3>
+              <Flame className="w-5 h-5 flex-shrink-0" />
+              <h3 className="font-semibold text-sm md:text-base">Day Streak</h3>
             </div>
-            <div className="text-3xl font-bold">
+            <div className="text-2xl md:text-3xl font-bold">
               {profile?.current_streak || 0}
             </div>
             <p className="text-sm text-muted-foreground">consecutive</p>
@@ -209,10 +209,10 @@ const Dashboard = () => {
 
           <Card className="p-6 space-y-2">
             <div className="flex items-center gap-2 text-yellow-500">
-              <Trophy className="w-5 h-5" />
-              <h3 className="font-semibold">Withdrawal Goal</h3>
+              <Trophy className="w-5 h-5 flex-shrink-0" />
+              <h3 className="font-semibold text-sm md:text-base">Withdrawal Goal</h3>
             </div>
-            <div className="text-3xl font-bold">
+            <div className="text-2xl md:text-3xl font-bold break-words">
               {formatCurrency(profile?.withdrawal_goal || 0)}
             </div>
             <p className="text-sm text-muted-foreground">
